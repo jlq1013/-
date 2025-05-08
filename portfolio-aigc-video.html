@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>AIGC视频作品 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的AIGC视频作品集。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>AIGC视频作品</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>结合AI技术与后期制作的视频创作</p>
+            </div>
+        </section>
+
+        <!-- 作品列表区域 -->
+        <!-- class="portfolio-list section" 用于样式 -->
+        <section class="portfolio-list section">
+            <div class="container">
+                 <!-- 章节标题 -->
+                 <!-- data-aos="fade-up" 添加滚动动画 -->
+                 <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>视频作品集</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>观看我的AIGC视频项目</p>
+                </div>
+                <!-- 作品列表容器 -->
+                <!-- class="portfolio-items-container" 用于样式 -->
+                 <div class="portfolio-items-container">
+                    <!-- 作品项示例 1 - 两只老虎 -->
+                    <!-- class="portfolio-item-detail" 用于样式 -->
+                    <!-- id="liangzhi" 用于页面内锚点链接 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="portfolio-item-detail" id="liangzhi" data-aos="fade-up">
+                        <!-- 内容行，默认视频在左 -->
+                        <div class="row">
+                            <!-- 视频嵌入区域 -->
+                            <!-- class="item-video" 用于样式 -->
+                            <div class="item-video">
+                                <!-- 嵌入视频播放器，示例使用YouTube嵌入代码 -->
+                                <!-- 请替换 src 为您的实际视频嵌入URL（例如B站、YouTube等） -->
+                                <!-- iframe 属性 allow 可以根据需要调整 -->
+                                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <!-- 作品文本内容区域 -->
+                            <!-- class="item-content" 用于样式 -->
+                            <div class="item-content">
+                                <!-- 标题，移除 data-translate 属性 -->
+                                <h3>两只老虎 (短片预演)</h3>
+                                <!-- 元信息（年份、项目等），移除 data-translate 属性 -->
+                                <p class="meta"><strong>年份</strong>: 2023 | <strong>项目</strong>: 时光之鹫计划</p>
+                                <!-- 描述，移除 data-translate 属性 -->
+                                <p class="description">这是我参与的科幻短片《两只老虎》的预演视频，负责了编剧和部分后期工作...</p>
+                                <!-- 行动按钮，移除 data-translate 属性 -->
+                                <!-- 请替换 href 为实际的视频观看链接或项目详情页链接 -->
+                                <a href="#" class="btn btn-primary">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- 作品项示例 2 - AI 生成短片 -->
+                    <!-- class="portfolio-item-detail" 用于样式 -->
+                    <!-- data-aos="fade-up" data-aos-delay="100" 添加滚动动画，延迟100ms -->
+                     <div class="portfolio-item-detail" data-aos="fade-up" data-aos-delay="100">
+                         <!-- 内容行，添加 'reverse' 类使视频在右 -->
+                         <div class="row reverse">
+                             <!-- 视频嵌入区域 -->
+                             <div class="item-video">
+                                 <!-- 嵌入视频播放器，示例使用Placeholder URL -->
+                                 <!-- 请替换 src 为您的实际视频嵌入URL -->
+                                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                             </div>
+                             <!-- 作品文本内容区域 -->
+                             <div class="item-content">
+                                 <!-- 标题，移除 data-translate 属性 -->
+                                 <h3>AI生成实验短片</h3>
+                                 <!-- 元信息，移除 data-translate 属性 -->
+                                 <p class="meta"><strong>年份</strong>: 2024 | <strong>工具</strong>: RunwayML, Midjourney</p>
+                                 <!-- 描述，移除 data-translate 属性 -->
+                                 <p class="description">探索使用RunwayML等AI工具直接生成视频片段并进行后期剪辑的实验性短片...</p>
+                                 <!-- 行动按钮，移除 data-translate 属性 -->
+                                 <!-- 请替换 href -->
+                                 <a href="#" class="btn btn-primary">观看视频</a>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- 您可以按照上述结构添加更多AIGC视频作品项 -->
+                     <!-- 确保替换视频嵌入URL、alt文本、链接以及data-aos属性 -->
+                 </div>
+            </div>
+        </section>
+    </main>
+ <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

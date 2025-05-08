@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>AIGC程序作品 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的AIGC程序作品集。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Prism.js 的样式表，用于代码高亮 -->
+    <!-- Prism.js 提供了多种主题，这里使用 okaidia 主题，您可以根据喜好更换 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css">
+    <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>AIGC程序作品</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>利用AIGC辅助的程序开发探索</p>
+            </div>
+        </section>
+
+        <!-- 作品列表区域 -->
+        <!-- class="portfolio-list section" 用于样式 -->
+        <section class="portfolio-list section">
+            <div class="container">
+                 <!-- 章节标题 -->
+                 <!-- data-aos="fade-up" 添加滚动动画 -->
+                 <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>程序作品集</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>展示我利用AIGC辅助编写的代码片段或小工具</p>
+                </div>
+
+                <!-- 作品列表容器 -->
+                <!-- class="portfolio-items-container" 用于样式 -->
+                <div class="portfolio-items-container">
+                    <!-- 作品项示例 1 - Unity AI辅助脚本片段 -->
+                    <!-- class="portfolio-item-detail" 用于样式 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="portfolio-item-detail" data-aos="fade-up">
+                        <!-- 内容行，默认代码在左 -->
+                        <div class="row">
+                             <!-- 代码片段区域 -->
+                             <!-- class="item-code" 用于样式 -->
+                             <div class="item-code">
+                                 <!-- pre 标签保留代码格式，code 标签用于代码高亮 -->
+                                 <!-- class="language-csharp" 告诉 Prism.js 这是 C# 代码 -->
+                                 <pre><code class="language-csharp">
+ // C# 脚本示例 (AIGC辅助生成)
+
+ using UnityEngine; // 引入Unity Engine命名空间
+
+ public class AiAssistedScript : MonoBehaviour // 定义脚本类，继承MonoBehaviour
+ {
+     // Start 方法在对象首次启用时调用
+     void Start()
+     {
+         // 在Unity控制台输出一条消息
+         Debug.Log("Hello from AI-assisted script!");
+         // 示例：使用AI生成的基础数学计算函数
+         // int sum = AiCalculateSum(5, 10);
+         // Debug.Log("AI calculated sum: " + sum);
+     }
+
+     /*
+     // 示例：一个由AI辅助编写的简单函数
+     int AiCalculateSum(int a, int b)
+     {
+         // AI提示：确保输入是正数？这里省略了输入校验...
+         return a + b; // 返回两数之和
+     }
+     */
+
+     // Update 方法在每一帧调用一次
+     // void Update()
+     // {
+     //    // 示例：让对象每帧旋转
+     //    // transform.Rotate(Vector3.up * Time.deltaTime * 10);
+     // }
+ }
+                                 </code></pre>
+                             </div>
+                            <!-- 作品文本内容区域 -->
+                            <!-- class="item-content" 用于样式 -->
+                            <div class="item-content">
+                                <!-- 标题，移除 data-translate 属性 -->
+                                <h3>Unity AI辅助脚本片段</h3>
+                                <!-- 元信息（工具、语言等），移除 data-translate 属性 -->
+                                <p class="meta"><strong>工具</strong>: Claude, Deepseek | <strong>语言</strong>: C# | <strong>用途</strong>: Unity脚本开发</p>
+                                <!-- 描述，移除 data-translate 属性 -->
+                                <p class="description">这是一个我在学习Unity过程中，利用 Claude 和 Deepseek 辅助编写的 C# 脚本片段。主要用于快速生成基础功能代码或解决特定问题，例如组件初始化、简单交互逻辑等，展示了AIGC在辅助编程方面的效率提升作用。</p>
+                                <!-- 行动按钮（可选，如果需要提供代码仓库链接），移除 data-translate 属性 -->
+                                <!-- <a href="#" class="btn btn-primary">查看代码仓库</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 作品项示例 2 - Python 小工具 -->
+                    <!-- class="portfolio-item-detail" 用于样式 -->
+                    <!-- data-aos="fade-up" data-aos-delay="100" 添加滚动动画，延迟100ms -->
+                     <div class="portfolio-item-detail" data-aos="fade-up" data-aos-delay="100">
+                         <!-- 内容行，添加 'reverse' 类使代码在右 -->
+                         <div class="row reverse">
+                              <!-- 代码片段区域 -->
+                              <div class="item-code">
+                                  <!-- class="language-python" 告诉 Prism.js 这是 Python 代码 -->
+                                  <pre><code class="language-python">
+ # Python 小工具示例 (AIGC辅助生成)
+
+ import os # 导入os模块，用于文件操作
+ # import shutil # 如果需要复制或移动文件，导入shutil
+
+ def find_large_files(directory, min_size_mb):
+     """
+     查找指定目录下大于等于 min_size_mb 的文件。
+
+     Args:
+         directory (str): 要查找的目录路径。
+         min_size_mb (int): 文件大小的最小阈值（MB）。
+
+     Returns:
+         list: 包含符合条件的文件路径和大小的列表。
+     """
+     large_files = [] # 初始化空列表存放结果
+     min_size_bytes = min_size_mb * 1024 * 1024 # 将MB转换为Bytes
+
+     # 遍历目录及子目录
+     for root, _, files in os.walk(directory):
+         for file in files:
+             file_path = os.path.join(root, file) # 获取完整文件路径
+             try:
+                 # 获取文件大小
+                 file_size_bytes = os.path.getsize(file_path)
+                 if file_size_bytes >= min_size_bytes:
+                     file_size_mb_actual = file_size_bytes / (1024 * 1024) # 实际大小MB
+                     large_files.append((file_path, f"{file_size_mb_actual:.2f} MB")) # 添加到结果列表
+             except Exception as e:
+                 # 处理访问文件可能出现的异常
+                 print(f"Error accessing file {file_path}: {e}")
+
+     return large_files # 返回结果列表
+
+ # 示例用法
+ if __name__ == "__main__":
+     # 请替换 '/path/to/your/directory' 为实际目录
+     target_directory = './downloads' # 假设查找当前目录下的downloads文件夹
+     threshold_mb = 100 # 查找大于等于100MB的文件
+
+     print(f"正在查找目录 '{target_directory}' 下大于等于 {threshold_mb}MB 的文件...")
+     found_files = find_large_files(target_directory, threshold_mb)
+
+     if found_files:
+         print("\n找到以下大文件:")
+         for file, size in found_files:
+             print(f"- {file} ({size})")
+     else:
+         print("\n未找到符合条件的大文件。")
+
+                                  </code></pre>
+                              </div>
+                              <!-- 作品文本内容区域 -->
+                              <div class="item-content">
+                                  <!-- 标题，移除 data-translate 属性 -->
+                                  <h3>AI辅助Python文件查找工具</h3>
+                                  <!-- 元信息，移除 data-translate 属性 -->
+                                  <p class="meta"><strong>工具</strong>: Claude | <strong>语言</strong>: Python | <strong>用途</strong>: 文件管理</p>
+                                  <!-- 描述，移除 data-translate 属性 -->
+                                  <p class="description">这个Python脚本是一个简单的小工具，用于查找指定目录下大于特定大小的文件。在编写过程中，AI提供了核心的目录遍历和文件大小获取逻辑，并帮助我完善了异常处理和命令行输出，极大地加快了开发速度。</p>
+                                  <!-- 行动按钮（可选），移除 data-translate 属性 -->
+                                  <!-- <a href="#" class="btn btn-primary">查看代码</a> -->
+                              </div>
+                          </div>
+                      </div>
+
+                    <!-- 您可以按照上述结构添加更多AIGC程序作品项 -->
+                    <!-- 确保替换代码内容、语言类、alt文本、链接以及data-aos属性 -->
+                </div>
+            </div>
+        </section>
+    </main>
+ <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- 引入 Prism.js 库，用于代码高亮 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <!-- 引入需要高亮的语言组件，这里引入 C# 和 Python -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-csharp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-python.min.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

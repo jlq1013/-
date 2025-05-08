@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>AIGC绘画作品 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的AIGC绘画作品集。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>AIGC绘画作品</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>AI赋能的视觉创意探索</p>
+            </div>
+        </section>
+
+        <!-- 作品网格区域 -->
+        <!-- class="portfolio-grid-section section" 用于样式 -->
+        <section class="portfolio-grid-section section">
+            <div class="container">
+                 <!-- 章节标题 -->
+                 <!-- data-aos="fade-up" 添加滚动动画 -->
+                 <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>绘画作品集</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>利用Stable Diffusion等工具创作的视觉艺术</p>
+                </div>
+
+                 <!-- 作品筛选按钮 -->
+                 <!-- class="portfolio-filter" 用于样式和JS筛选 -->
+                 <!-- data-filter 属性用于JS筛选逻辑 -->
+                 <!-- active 类用于默认激活状态 -->
+                 <div class="portfolio-filter" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <button class="active" data-filter="all">全部</button>
+                    <button data-filter="concept">概念设计</button>
+                    <button data-filter="illustration">插画</button>
+                     <button data-filter="character">角色</button>
+                </div>
+
+                <!-- 作品网格容器 -->
+                <!-- class="portfolio-grid" 用于样式和JS筛选 -->
+                <div class="portfolio-grid">
+                     <!-- 作品项示例 1 -->
+                     <!-- class="portfolio-item" 用于样式 -->
+                     <!-- class="concept" 用于筛选 -->
+                     <!-- id="futur-city" 用于页面内锚点链接 -->
+                     <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="portfolio-item concept" data-aos="fade-up" id="futur-city">
+                        <!-- 作品链接，链接到全图或详情页 -->
+                        <a href="/web_image/ai-city-full.jpg" data-lightbox="aigc-art" data-title="未来都市 - 使用Stable Diffusion创作"> <!-- 示例链接，可以使用Lightbox库显示全图 -->
+                            <!-- 作品图片区域 -->
+                            <div class="portfolio-img">
+                                 <!-- 作品图片，请替换路径 -->
+                                <img src="/web_image/ai-city-cover.jpg" alt="未来都市 - AI绘画作品">
+                                <!-- 鼠标悬停叠加层 -->
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>未来都市</h3>
+                                         <p>Stable Diffusion</p> <!-- 工具信息 -->
+                                     </div>
+                                </div>
+                            </div>
+                             <!-- 作品内容区域（在网格模式下通常不显示详细描述，只显示标题和分类） -->
+                             <!-- 保留此结构以便CSS通用样式，但可能需要调整CSS使其在网格中更简洁 -->
+                             <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>未来都市</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>未来城市概念图</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">概念设计</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项示例 2 -->
+                    <div class="portfolio-item illustration" data-aos="fade-up" data-aos-delay="100">
+                        <a href="/web_image/ai-illu-full.jpg" data-lightbox="aigc-art" data-title="赛博朋克插画 - 使用Midjourney创作"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/ai-illu-cover.jpg" alt="赛博朋克插画 - AI绘画作品">
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>赛博朋克插画</h3>
+                                         <p>Midjourney</p>
+                                     </div>
+                                </div>
+                            </div>
+                             <div class="portfolio-content">
+                                 <!-- 移除 data-translate 属性 -->
+                                <h3>赛博朋克插画</h3>
+                                 <!-- 移除 data-translate 属性 -->
+                                <p>富有未来感的场景插画</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">插画</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项示例 3 -->
+                    <div class="portfolio-item character" data-aos="fade-up" data-aos-delay="200">
+                        <a href="/web_image/ai-char-full.jpg" data-lightbox="aigc-art" data-title="幻想角色设计 - 使用Stable Diffusion创作"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/ai-char-cover.jpg" alt="幻想角色设计 - AI绘画作品">
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>幻想角色设计</h3>
+                                         <p>Stable Diffusion</p>
+                                     </div>
+                                </div>
+                            </div>
+                             <div class="portfolio-content">
+                                 <!-- 移除 data-translate 属性 -->
+                                <h3>幻想角色设计</h3>
+                                 <!-- 移除 data-translate 属性 -->
+                                <p>AI生成的游戏角色概念</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">角色</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 您可以按照上述结构添加更多AIGC绘画作品项 -->
+                    <!-- 确保替换图片路径、alt文本、链接以及data-lightbox属性 -->
+                </div>
+            </div>
+        </section>
+    </main>
+ <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <!-- 可选引入 Lightbox 库用于点击图片显示全图 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+    <script>
+        // Lightbox 配置（可选，根据喜好调整）
+        lightbox.option({
+          'albumLabel': '图片 %1/%2', // 翻译相册标签
+          'wrapAround': true // 循环浏览相册
+        })
+    </script>
+</body>
+</html>

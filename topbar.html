@@ -1,0 +1,53 @@
+<!-- 顶部导航栏 -->
+<!-- 头部区域，包含整个导航栏 -->
+<header id="topbar">
+    <!-- 容器，限制内容最大宽度并居中 -->
+    <div class="container">
+        <!-- 网站Logo区域 -->
+        <a href="index.html" class="logo">
+            <!-- Logo图片，alt属性提供可访问性文本 -->
+            <!-- 请替换 `/web_image/qimo.ico` 为您自己的Logo图片路径 -->
+            <img src="/web_image/qimo.ico" alt="启末的个人作品集 Logo">
+        </a>
+
+        <!-- 导航菜单区域 -->
+        <nav>
+            <!-- 主菜单列表 -->
+            <!-- 'menu' 类用于样式和JS控制 -->
+            <ul class="menu">
+                <!-- 菜单项 -->
+                <!-- 'active' 类由JS根据当前页面设置，用于高亮显示当前页面的菜单项 -->
+                <!-- 移除 data-translate 属性 -->
+                <li><a href="index.html" class="active">首页</a></li>
+
+                <!-- 作品页下拉菜单 -->
+                <!-- 'dropdown' 类用于样式和JS控制下拉菜单 -->
+                <li class="dropdown">
+                    <!-- 下拉菜单的父链接，移除 data-translate 属性 -->
+                    <!-- 注意：这里的href可以是指向作品集总页面的链接，或者设置为#，具体取决于您的作品集展示方式 -->
+                    <a href="portfolio-sci-fi.html">作品集 <i class="fas fa-caret-down"></i></a> <!-- 添加向下箭头图标 -->
+                    <!-- 下拉菜单列表 -->
+                    <!-- 'dropdown-menu' 类用于样式和JS控制 -->
+                    <ul class="dropdown-menu">
+                        <!-- 下拉菜单子项，移除 data-translate 属性 -->
+                        <li><a href="portfolio-sci-fi.html">科幻文学作品</a></li>
+                        <li><a href="portfolio-aigc-art.html">AIGC绘画作品</a></li>
+                        <li><a href="portfolio-aigc-video.html">AIGC视频作品</a></li>
+                        <li><a href="portfolio-aigc-music.html">AIGC音乐作品</a></li>
+                        <li><a href="portfolio-aigc-game.html">AIGC游戏作品</a></li>
+                        <li><a href="portfolio-aigc-model.html">AIGC建模作品</a></li>
+                        <li><a href="portfolio-aigc-code.html">AIGC程序作品</a></li>
+                    </ul>
+                </li>
+
+                <!-- 其他菜单项，移除 data-translate 属性 -->
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <!-- Font Awesome 图标 -->
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>

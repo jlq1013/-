@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 配置视口，使页面在不同设备上宽度适配设备屏幕宽度，初始缩放比例为 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启末的个人作品集</title>
+    <meta name="description" content="启末的个人作品集 - 面向游戏策划与影视后期的个人作品集网站，展示科幻文学创作和AIGC作品。">
+   <!-- 引入 Font Awesome 字体图标库的样式表，用于在页面中使用各种图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画样式表，可用于实现页面元素的动画效果 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS（Animate On Scroll）库的样式表，用于实现滚动时元素的动画效果 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+     <!-- 从 Google Fonts 引入 Noto Sans SC 和 Roboto 字体，可在页面中使用这些字体来设置文本样式 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+     <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- Hero 区域 -->
+        <!-- class="hero" 用于样式 -->
+        <section class="hero">
+            <!-- Particles.js 容器 -->
+            <div class="hero-particles" id="particles-js"></div>
+            <div class="container">
+                <!-- Hero 内容 -->
+                <div class="hero-content">
+                    <!-- 副标题，移除 data-translate 属性 -->
+                    <p class="hero-subtitle">游戏策划 & AIGC</p>
+                    <!-- 主标题，移除 data-translate 属性 -->
+                    <h1 class="hero-title">启末的个人作品集</h1>
+                    <!-- 描述，移除 data-translate 属性 -->
+                    <p class="hero-description">探索科幻与AI创作的无限可能</p>
+                    <!-- 按钮组 -->
+                    <div class="hero-buttons">
+                        <!-- 查看作品按钮，链接到作品集区域，移除 data-translate 属性 -->
+                        <a href="#featured-works" class="btn btn-primary">查看作品</a>
+                        <!-- 联系我按钮，链接到联系我页面，移除 data-translate 属性 -->
+                        <a href="contact.html" class="btn btn-outline">联系我</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部波浪形状 SVG -->
+            <div class="hero-shape">
+                 <!-- 使用您提供的SVG路径，fill颜色与下一section背景色一致 -->
+                <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- shape-fill 类用于在CSS中控制颜色 -->
+                    <path class="shape-fill" d="M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 362.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 精选作品区域 -->
+        <!-- id="featured-works" 用于锚点链接，class="section featured-works" 用于样式和JS筛选 -->
+        <section id="featured-works" class="section featured-works">
+            <div class="container">
+                <!-- 章节标题 -->
+                <!-- data-aos="fade-up" 添加滚动动画 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>精选作品</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>探索我的科幻文学作品与AIGC创作</p>
+                </div>
+
+                <!-- 作品筛选按钮 -->
+                <!-- class="portfolio-filter" 用于样式和JS筛选 -->
+                <!-- data-filter 属性用于JS筛选逻辑 -->
+                <!-- active 类用于默认激活状态 -->
+                <div class="portfolio-filter" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <button class="active" data-filter="all">全部</button>
+                    <button data-filter="sci-fi">科幻文学</button>
+                    <button data-filter="ai-art">AI绘画</button>
+                    <button data-filter="ai-video">AI视频</button>
+                    <button data-filter="ai-model">3D建模</button>
+                     <!-- 根据您的作品页细分，这里只列出精选类型 -->
+                     <!-- 如果想展示更多类型，可以在这里添加更多按钮 -->
+                </div>
+
+                <!-- 作品网格容器 -->
+                <!-- class="portfolio-grid" 用于样式和JS筛选 -->
+                <div class="portfolio-grid">
+                    <!-- 作品项目1 - 科幻文学 -->
+                    <!-- class="portfolio-item" 用于样式 -->
+                    <!-- class="sci-fi" 用于筛选 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="portfolio-item sci-fi" data-aos="fade-up">
+                        <!-- 作品链接，链接到具体作品详情页 -->
+                        <a href="portfolio-sci-fi.html#hua-shao-yun"> <!-- 示例链接，您需要创建详情页并更新链接 -->
+                            <!-- 作品图片区域 -->
+                            <div class="portfolio-img">
+                                <!-- 作品封面图 -->
+                                <!-- 请替换 src 路径 -->
+                                <img src="/web_image/huashaoyun-cover.jpg" alt="火烧云 - 科幻小说">
+                                <!-- 鼠标悬停叠加层 -->
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>火烧云</h3>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <p>科幻短篇小说</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 作品内容区域 -->
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>火烧云</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>由银河奖/星云奖得主阿缺老师指导，全国特等奖作品</p>
+                                <!-- 作品分类标签，移除 data-translate 属性 -->
+                                <span class="portfolio-category">科幻文学</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项目2 - 科幻文学 -->
+                    <div class="portfolio-item sci-fi" data-aos="fade-up" data-aos-delay="100">
+                        <a href="portfolio-sci-fi.html#xuehua"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/xuehua-cover.jpg" alt="雪花飘落的那个夏天 - 科幻小说">
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>雪花飘落的那个夏天</h3>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <p>科幻短篇小说</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>雪花飘落的那个夏天</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>获《三体》作者刘慈欣老师称赞的优秀作品</p>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="portfolio-category">科幻文学</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项目3 - 科幻文学 -->
+                    <div class="portfolio-item sci-fi" data-aos="fade-up" data-aos-delay="200">
+                         <a href="portfolio-sci-fi.html#yangdi"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/yangdi-cover.jpg" alt="洋底深处 - 科幻小说">
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>洋底深处</h3>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <p>科幻短篇小说</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>洋底深处</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>重庆市三等奖作品，即将出版</p>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="portfolio-category">科幻文学</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项目4 - AI绘画 -->
+                    <div class="portfolio-item ai-art" data-aos="fade-up">
+                        <a href="portfolio-aigc-art.html#futur-city"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/ai-city-cover.jpg" alt="未来都市 - AI绘画">
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>未来都市</h3>
+                                        <p>Stable Diffusion + ComfyUI</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>未来都市</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>使用Stable Diffusion创作的未来城市概念图</p>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="portfolio-category">AI绘画</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项目5 - AI视频 -->
+                    <div class="portfolio-item ai-video" data-aos="fade-up" data-aos-delay="100">
+                         <a href="portfolio-aigc-video.html#liangzhi"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/liangzhi-cover.jpg" alt="两只老虎 - 科幻短片预演">
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>两只老虎</h3>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <p>科幻短片动态预演</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>两只老虎</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>国家数字电影产业园展映作品，虚拟拍摄项目</p>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="portfolio-category">AI视频</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项目6 - 3D建模 -->
+                    <div class="portfolio-item ai-model" data-aos="fade-up" data-aos-delay="200">
+                        <a href="portfolio-aigc-model.html#sf-char"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                <img src="/web_image/sf-char-cover.jpg" alt="科幻角色 - 3D建模">
+                                <div class="portfolio-overlay">
+                                    <div>
+                                        <!-- 移除 data-translate 属性 -->
+                                        <h3>科幻角色</h3>
+                                        <p>Blender + TripoAI</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <!-- 移除 data-translate 属性 -->
+                                <h3>科幻角色</h3>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>结合AI与Blender创作的科幻游戏角色</p>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="portfolio-category">3D建模</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 更多精选作品项可以按照上述结构添加在这里 -->
+                </div>
+
+                <!-- 查看更多作品按钮 -->
+                <div class="text-center mt-50" data-aos="fade-up">
+                    <a href="portfolio-sci-fi.html" class="btn btn-primary">查看更多作品</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 创作能力区域 -->
+        <!-- class="services-section section bg-light" 用于样式 -->
+        <section class="services-section section bg-light">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>创作能力</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我能为您的项目提供的专业服务</p>
+                </div>
+
+                <!-- 创作能力卡片网格 -->
+                <div class="services-grid">
+                    <!-- 服务项目1 -->
+                    <!-- class="service-card" 用于样式 -->
+                    <div class="service-card" data-aos="fade-up">
+                        <!-- 图标区域 -->
+                        <div class="service-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <!-- 标题，移除 data-translate 属性 -->
+                        <h3>科幻IP创作</h3>
+                        <!-- 描述，移除 data-translate 属性 -->
+                        <p>基于深厚科幻功底，构建完整世界观、角色设定与剧情架构，打造独特IP。</p>
+                    </div>
+
+                    <!-- 服务项目2 -->
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <!-- 移除 data-translate 属性 -->
+                        <h3>AIGC内容生产</h3>
+                        <!-- 移除 data-translate 属性 -->
+                        <p>熟练运用各类AI工具，高效生成图像、视频、音乐等创意内容，提升项目视觉表现。</p>
+                    </div>
+
+                    <!-- 服务项目3 -->
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <!-- 移除 data-translate 属性 -->
+                        <h3>影视后期制作</h3>
+                        <!-- 移除 data-translate 属性 -->
+                        <p>提供专业的剪辑、特效、调色等后期服务，让您的视频作品更具视觉冲击力。</p>
+                    </div>
+
+                    <!-- 服务项目4 -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <!-- 移除 data-translate 属性 -->
+                        <h3>游戏策划设计</h3>
+                        <!-- 移除 data-translate 属性 -->
+                        <p>从游戏机制、关卡设计到剧情构建，提供全方位的游戏内容策划服务。</p>
+                    </div>
+
+                    <!-- 服务项目5 -->
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <!-- 移除 data-translate 属性 -->
+                        <h3>3D模型制作</h3>
+                        <!-- 移除 data-translate 属性 -->
+                        <p>结合Blender与AI工具，创建高质量的游戏与影视用3D模型与场景。</p>
+                    </div>
+
+                    <!-- 服务项目6 -->
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <!-- 移除 data-translate 属性 -->
+                        <h3>创意咨询顾问</h3>
+                        <!-- 移除 data-translate 属性 -->
+                        <p>为科幻、游戏、影视项目提供创意方向与内容优化的专业建议。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 获奖荣誉区域 -->
+        <!-- class="awards-section section" 用于样式 -->
+        <section class="awards-section section">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>获奖荣誉</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的创作成果与认可</p>
+                </div>
+
+                <!-- 获奖时间轴 -->
+                <!-- class="awards-timeline" 用于样式 -->
+                <div class="awards-timeline">
+                    <!-- 奖项1 -->
+                    <!-- class="award-item" 用于样式 -->
+                    <div class="award-item" data-aos="fade-up">
+                        <!-- 获奖日期 -->
+                        <div class="award-date">2024.02</div>
+                        <!-- 获奖内容卡片 -->
+                        <div class="award-content">
+                            <!-- 标题，移除 data-translate 属性 -->
+                            <h3>第二届"星辰奖"全国大学生科幻征文大赛</h3>
+                            <!-- 获奖级别，移除 data-translate 属性 -->
+                            <p class="award-level">全国特等奖</p>
+                            <!-- 获奖描述，移除 data-translate 属性 -->
+                            <p class="award-desc">科幻短篇小说作品《火烧云》由银河奖/星云奖得主阿缺老师指导，即将在香港集结出版。</p>
+                        </div>
+                    </div>
+
+                    <!-- 奖项2 -->
+                    <div class="award-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="award-date">2023.11</div>
+                        <div class="award-content">
+                            <!-- 移除 data-translate 属性 -->
+                            <h3>重庆市科普作品创作大赛</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="award-level">三等奖</p>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="award-desc">科幻短篇小说《洋底深处》入选重庆市优秀科普作品集，由重庆科技出版社出版。</p>
+                        </div>
+                    </div>
+
+                    <!-- 奖项3 -->
+                    <div class="award-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="award-date">2023.07</div>
+                        <div class="award-content">
+                            <!-- 移除 data-translate 属性 -->
+                            <h3>"中国科幻电影探索营-时光之鹫计划"</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="award-level">优秀学员</p>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="award-desc">短片作品《两只老虎》获入选国家数字电影产业园展映，负责编剧与剪辑工作。</p>
+                        </div>
+                    </div>
+                    <!-- 更多奖项可以按照上述结构添加在这里 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术栈区域 -->
+        <!-- class="tech-stack-section section bg-light" 用于样式 -->
+        <section class="tech-stack-section section bg-light">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>技术栈</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的创作工具与技能</p>
+                </div>
+
+                <!-- 技术栈网格 -->
+                <div class="tech-stack-grid">
+                    <!-- 技术类别1 -->
+                    <!-- class="tech-category" 用于样式 -->
+                    <div class="tech-category" data-aos="fade-up">
+                        <!-- 标题，移除 data-translate 属性 -->
+                        <h3><i class="fas fa-robot"></i> <span>AIGC工具</span></h3>
+                        <!-- 技术项容器 -->
+                        <div class="tech-items">
+                            <!-- 技术项 -->
+                            <div class="tech-item">
+                                <!-- 技术图标，请替换路径 -->
+                                <img src="/web_image/deepseek-logo.png" alt="Deepseek Logo">
+                                <span>Deepseek</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/claude-logo.png" alt="Claude Logo">
+                                <span>Claude</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/stablediffusion-logo.png" alt="Stable Diffusion Logo">
+                                <span>Stable Diffusion</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/midjourney-logo.png" alt="Midjourney Logo">
+                                <span>Midjourney</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/comfyui-logo.png" alt="ComfyUI Logo">
+                                <span>ComfyUI</span>
+                            </div>
+                             <!-- 更多AIGC工具 -->
+                        </div>
+                    </div>
+
+                    <!-- 技术类别2 -->
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                         <!-- 移除 data-translate 属性 -->
+                         <h3><i class="fas fa-film"></i> <span>影视后期</span></h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="/web_image/pr-logo.png" alt="Adobe Premiere Pro Logo">
+                                <span>Premiere Pro</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/ae-logo.png" alt="Adobe After Effects Logo">
+                                <span>After Effects</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/ps-logo.png" alt="Adobe Photoshop Logo">
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/blender-logo.png" alt="Blender Logo">
+                                <span>Blender</span>
+                            </div>
+                             <div class="tech-item">
+                                <img src="/web_image/davinci-logo.png" alt="DaVinci Resolve Logo">
+                                <span>DaVinci</span>
+                            </div>
+                             <!-- 更多影视后期工具 -->
+                        </div>
+                    </div>
+
+                    <!-- 技术类别3 -->
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                        <!-- 移除 data-translate 属性 -->
+                        <h3><i class="fas fa-gamepad"></i> <span>游戏开发</span></h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="/web_image/unity-logo.png" alt="Unity Logo">
+                                <span>Unity</span>
+                            </div>
+                             <div class="tech-item">
+                                <img src="/web_image/csharp-logo.png" alt="C# Logo">
+                                <span>C#</span>
+                            </div>
+                            <!-- 可以使用通用图标或您自定义的图标 -->
+                             <div class="tech-item">
+                                <img src="/web_image/3d-icon.png" alt="3D建模 Icon">
+                                 <!-- 移除 data-translate 属性 -->
+                                <span>3D建模</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="/web_image/gamedesign-icon.png" alt="游戏设计 Icon">
+                                 <!-- 移除 data-translate 属性 -->
+                                <span>游戏设计</span>
+                            </div>
+                             <div class="tech-item">
+                                <img src="/web_image/worldbuilding-icon.png" alt="世界观构建 Icon">
+                                 <!-- 移除 data-translate 属性 -->
+                                <span>世界观构建</span>
+                            </div>
+                             <!-- 更多游戏开发相关技能 -->
+                        </div>
+                    </div>
+                     <!-- 更多技术类别可以按照上述结构添加在这里 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我简介区域 -->
+        <!-- class="about-preview section" 用于样式 -->
+        <section class="about-preview section">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>关于我</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>科幻创作者 · AI探索者 · 游戏策划</p>
+                </div>
+                <!-- 关于我预览内容 -->
+                <div class="about-preview-content">
+                    <!-- 内容行 -->
+                    <div class="row">
+                        <!-- 图片区域 -->
+                        <!-- class="about-preview-image" 用于样式 -->
+                        <div class="about-preview-image" data-aos="fade-right">
+                             <!-- 您的个人照片，请替换路径 -->
+                            <img src="/web_image/zjz.jpg" alt="启末的个人照片">
+                            <!-- 经验徽章 -->
+                            <div class="experience-badge">
+                                <span class="number">3+</span>
+                                <!-- 移除 data-translate 属性 -->
+                                <span class="text">年创作经验</span>
+                            </div>
+                        </div>
+                        <!-- 文本内容区域 -->
+                        <!-- class="about-preview-text" 用于样式 -->
+                        <div class="about-preview-text" data-aos="fade-left">
+                            <!-- 姓名/昵称 -->
+                            <h3>蒋利强 <span>/ 启末</span></h3>
+                            <!-- 标语/头衔，移除 data-translate 属性 -->
+                            <p class="tagline">科幻作家 & 游戏内容创作者</p>
+                            <!-- 详细描述，移除 data-translate 属性 -->
+                            <p class="description">
+                                重庆移通学院数字媒体技术专业本科生，多篇科幻小说获奖，包括第二届"星辰奖"全国大学生科幻征文大赛特等奖。熟练运用各类AIGC工具辅助创作，擅长科幻IP与虚拟世界观构建。曾参与"中国科幻电影探索营-时光之鹫计划"，担任编剧及剪辑师。
+                            </p>
+                            <!-- 关键能力点 -->
+                            <div class="key-points">
+                                <!-- 关键点1 -->
+                                <div class="key-point">
+                                    <i class="fas fa-pen-nib"></i>
+                                    <!-- 移除 data-translate 属性 -->
+                                    <h4>AI辅助创作</h4>
+                                    <p>Deep-seek, Claude, SD</p>
+                                </div>
+                                <!-- 关键点2 -->
+                                <div class="key-point">
+                                    <i class="fas fa-film"></i>
+                                    <!-- 移除 data-translate 属性 -->
+                                    <h4>影视后期</h4>
+                                    <p>Blender, PS, PR, AE</p>
+                                </div>
+                                <!-- 关键点3 -->
+                                <div class="key-point">
+                                    <i class="fas fa-gamepad"></i>
+                                    <!-- 移除 data-translate 属性 -->
+                                    <h4>游戏设计</h4>
+                                    <!-- 移除 data-translate 属性 -->
+                                    <p>Unity, 世界观构建</p>
+                                </div>
+                                 <!-- 更多关键点 -->
+                            </div>
+                            <!-- 按钮组 -->
+                            <div class="about-buttons">
+                                <!-- 了解更多按钮，链接到关于我页面，移除 data-translate 属性 -->
+                                <a href="about.html" class="btn btn-primary">了解更多</a>
+                                <!-- 联系我按钮，链接到联系我页面，移除 data-translate 属性 -->
+                                <a href="contact.html" class="btn btn-outline">联系我</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库，用于检测元素滚动到视图区域 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库，用于滚动时触发动画 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- 可选的粒子效果库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <!-- 引入自定义的JavaScript文件 -->
+    <script src="script.js"></script>
+    <!-- Particles.js 初始化脚本 -->
+    <script>
+        // 检查 particlesJS 是否已加载
+        if (typeof particlesJS !== 'undefined') {
+             // 初始化 particles.js，配置粒子效果参数
+             particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80, // 粒子数量
+                        "density": {
+                            "enable": true,
+                            "value_area": 800 // 粒子密度区域
+                        }
+                    },
+                    "color": {
+                        "value": "#00ff4c" // 粒子颜色，使用主色调
+                    },
+                    "shape": {
+                        "type": "circle", // 粒子形状为圆形
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5, // 粒子透明度
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3, // 粒子大小
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true, // 启用粒子连线
+                        "distance": 150, // 连线距离
+                        "color": "#00ff4c", // 线条颜色，使用主色调
+                        "opacity": 0.4, // 线条透明度
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true, // 启用粒子移动
+                        "speed": 6, // 移动速度
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out", // 移出视口
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas", // 交互检测区域
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab" // 鼠标悬停模式：抓取
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push" // 鼠标点击模式：添加粒子
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 200,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true // 启用Retina屏幕检测
+            });
+        } else {
+            console.error("Particles.js library not loaded."); // 如果Particles.js未加载，输出错误信息
+        }
+    </script>
+</body>
+</html>

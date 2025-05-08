@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>AIGC建模作品 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的AIGC建模作品集。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+     <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>AIGC建模作品</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>结合AI工具与Blender进行的3D建模创作</p>
+            </div>
+        </section>
+
+        <!-- 作品网格区域 -->
+        <!-- class="portfolio-grid-section section" 用于样式 -->
+        <section class="portfolio-grid-section section">
+            <div class="container">
+                 <!-- 章节标题 -->
+                 <!-- data-aos="fade-up" 添加滚动动画 -->
+                 <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>建模作品集</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>展示我利用AIGC工具辅助创建的3D模型</p>
+                </div>
+
+                 <!-- 作品筛选按钮 -->
+                 <!-- class="portfolio-filter" 用于样式和JS筛选 -->
+                 <!-- data-filter 属性用于JS筛选逻辑 -->
+                 <!-- active 类用于默认激活状态 -->
+                 <div class="portfolio-filter" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <button class="active" data-filter="all">全部</button>
+                    <button data-filter="character">角色</button>
+                    <button data-filter="prop">道具</button>
+                     <button data-filter="scene">场景</button>
+                </div>
+
+                <!-- 作品网格容器 -->
+                <!-- class="portfolio-grid" 用于样式和JS筛选 -->
+                <div class="portfolio-grid">
+                    <!-- 作品项示例 1 - 科幻角色 -->
+                    <!-- class="portfolio-item" 用于样式 -->
+                    <!-- class="character" 用于筛选 -->
+                    <!-- id="sf-char" 用于页面内锚点链接 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="portfolio-item character" data-aos="fade-up" id="sf-char">
+                        <!-- 作品链接，可以链接到模型查看器（如Sketchfab）或详情页，这里使用Lightbox预览大图 -->
+                        <a href="/web_image/sf-char-full.jpg" data-lightbox="aigc-model" data-title="科幻角色模型 - 使用Blender和TripoAI"> <!-- 示例链接，Lightbox -->
+                            <!-- 作品图片区域 -->
+                            <div class="portfolio-img">
+                                 <!-- 模型渲染图或截图，请替换路径 -->
+                                <img src="/web_image/sf-char-cover.jpg" alt="科幻角色模型预览图">
+                                <!-- 鼠标悬停叠加层 -->
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>科幻角色</h3>
+                                         <p>Blender + TripoAI</p> <!-- 工具信息 -->
+                                     </div>
+                                </div>
+                            </div>
+                             <!-- 作品内容区域（在网格模式下通常不显示详细描述，只显示标题和分类） -->
+                             <!-- 保留此结构以便CSS通用样式 -->
+                             <div class="portfolio-content">
+                                 <!-- 移除 data-translate 属性 -->
+                                <h3>科幻角色</h3>
+                                 <!-- 移除 data-translate 属性 -->
+                                <p>游戏角色建模</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">角色</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 作品项示例 2 - 科幻道具 -->
+                    <div class="portfolio-item prop" data-aos="fade-up" data-aos-delay="100">
+                        <a href="/web_image/sf-prop-full.jpg" data-lightbox="aigc-model" data-title="未来武器道具 - 使用Blender和AI工具"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                 <!-- 模型渲染图或截图，请替换路径 -->
+                                <img src="/web_image/sf-prop-cover.jpg" alt="未来武器道具模型预览图">
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>未来武器道具</h3>
+                                         <p>Blender + AI Tools</p>
+                                     </div>
+                                </div>
+                            </div>
+                             <div class="portfolio-content">
+                                 <!-- 移除 data-translate 属性 -->
+                                <h3>未来武器道具</h3>
+                                 <!-- 移除 data-translate 属性 -->
+                                <p>游戏或影视道具建模</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">道具</span>
+                            </div>
+                        </a>
+                    </div>
+
+                     <!-- 作品项示例 3 - AI辅助场景 -->
+                    <div class="portfolio-item scene" data-aos="fade-up" data-aos-delay="200">
+                        <a href="/web_image/sf-scene-full.jpg" data-lightbox="aigc-model" data-title="赛博朋克场景一角 - 使用Blender和AI概念图"> <!-- 示例链接 -->
+                            <div class="portfolio-img">
+                                 <!-- 模型渲染图或截图，请替换路径 -->
+                                <img src="/web_image/sf-scene-cover.jpg" alt="赛博朋克场景模型预览图">
+                                <div class="portfolio-overlay">
+                                     <div>
+                                         <!-- 移除 data-translate 属性 -->
+                                         <h3>赛博朋克场景一角</h3>
+                                         <p>Blender + SD Concept</p>
+                                     </div>
+                                </div>
+                            </div>
+                             <div class="portfolio-content">
+                                 <!-- 移除 data-translate 属性 -->
+                                <h3>赛博朋克场景一角</h3>
+                                 <!-- 移除 data-translate 属性 -->
+                                <p>小型环境建模</p>
+                                 <!-- 移除 data-translate 属性 -->
+                                 <span class="portfolio-category">场景</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- 您可以按照上述结构添加更多AIGC建模作品项 -->
+                    <!-- 确保替换图片路径、alt文本、链接、筛选类以及data-aos属性 -->
+                </div>
+            </div>
+        </section>
+    </main>
+ <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <!-- 引入 Lightbox 库用于点击图片显示全图 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+    <script>
+        // Lightbox 配置（可选，根据喜好调整）
+        // 确保配置项与AIGC绘画页面的名称一致，以便在同一个相册中显示
+        lightbox.option({
+          'albumLabel': '模型 %1/%2', // 翻译相册标签
+          'wrapAround': true // 循环浏览相册
+        })
+    </script>
+</body>
+</html>

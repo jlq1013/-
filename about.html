@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>关于我 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的个人简介、教育背景、获奖情况、项目经历与技能爱好。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+     <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>关于我</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>了解我的故事、技能和经历</p>
+            </div>
+        </section>
+
+        <!-- 个人简介区域 -->
+        <!-- class="about-section section" 用于样式 -->
+        <section class="about-section section">
+            <div class="container">
+                <!-- 关于我内容容器，使用Flex布局 -->
+                <div class="about-container">
+                    <!-- 图片区域 -->
+                    <!-- class="about-image" 用于样式 -->
+                    <div class="about-image" data-aos="fade-right">
+                        <!-- 您的个人照片，请替换路径 -->
+                        <img src="/web_image/about-qimo.jpg" alt="蒋利强 - 启末的博客">
+                    </div>
+                    <!-- 文本内容区域 -->
+                    <!-- class="about-content" 用于样式 -->
+                    <div class="about-content" data-aos="fade-left">
+                        <!-- 姓名/昵称 -->
+                        <!-- 移除 data-translate 属性 -->
+                        <h2>启末</h2>
+                        <!-- 标语/头衔，移除 data-translate 属性 -->
+                        <p class="highlight-text">科幻作家 & 游戏内容创作者</p>
+                        <!-- 详细描述，移除 data-translate 属性 -->
+                        <p>我是一名专注于科幻创作与AIGC技术应用的内容创作者，目前是重庆移通学院数字媒体技术专业的本科生。我热爱科幻文学，不断探索故事与技术的融合可能性。</p>
+                        <p>作为一名科幻作家，我的多篇作品获得了包括"星辰奖"全国大学生科幻征文大赛特等奖在内的多项荣誉。我也积极参与各类科幻电影创作营，为科幻IP的多维度发展贡献力量。</p>
+                        <p>在游戏与影视内容创作方面，我熟练运用Blender、Adobe系列软件等工具进行内容创作，同时积极探索各类AIGC技术在内容创作中的应用，力求打造独特且高效的创作流程。</p>
+                        <!-- 详细信息列表 -->
+                        <div class="about-details">
+                            <!-- 详情项 -->
+                            <div class="detail-item">
+                                <!-- 移除 data-translate 属性 -->
+                                <h5>生日</h5>
+                                <p>2003年</p>
+                            </div>
+                            <div class="detail-item">
+                                <!-- 移除 data-translate 属性 -->
+                                <h5>学历</h5>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>本科在读</p>
+                            </div>
+                            <div class="detail-item">
+                                <!-- 移除 data-translate 属性 -->
+                                <h5>专业</h5>
+                                <!-- 移除 data-translate 属性 -->
+                                <p>数字媒体技术</p>
+                            </div>
+                            <div class="detail-item">
+                                <!-- 移除 data-translate 属性 -->
+                                <h5>邮箱</h5>
+                                <p>qimo2003@163.com</p>
+                            </div>
+                             <!-- 更多详情项 -->
+                        </div>
+                        <!-- 联系我按钮，链接到联系我页面，移除 data-translate 属性 -->
+                        <a href="contact.html" class="btn btn-primary">联系我</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 时间轴 - 教育背景区域 -->
+        <!-- class="timeline-section section bg-light" 用于样式 -->
+        <section class="timeline-section section bg-light">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>教育背景</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的学习之路</p>
+                </div>
+
+                <!-- 时间轴容器 -->
+                <div class="timeline">
+                    <!-- 时间轴项 1 -->
+                    <!-- class="timeline-item" 用于样式 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <!-- 图标 -->
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <!-- 内容卡片 -->
+                        <div class="timeline-content">
+                            <!-- 日期 -->
+                            <span class="timeline-date">2022 - 至今</span>
+                            <!-- 标题，移除 data-translate 属性 -->
+                            <h3 class="timeline-title">重庆移通学院</h3>
+                            <!-- 文本描述，移除 data-translate 属性 -->
+                            <p class="timeline-text">数字媒体技术专业 本科</p>
+                            <p class="timeline-text">主修课程：游戏设计与开发、影视特效制作、数字媒体艺术、交互设计、3D建模与动画等。</p>
+                        </div>
+                    </div>
+
+                    <!-- 时间轴项 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019 - 2022</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">重庆市第一中学</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text">高中</p>
+                            <p class="timeline-text">在校期间开始接触科幻创作，参与文学社团活动，培养了对科幻文学的浓厚兴趣。</p>
+                        </div>
+                    </div>
+                     <!-- 更多教育背景项 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 时间轴 - 获奖情况区域 -->
+        <!-- class="timeline-section section" 用于样式 -->
+        <section class="timeline-section section">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>获奖情况</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的创作成果与认可</p>
+                </div>
+
+                <!-- 时间轴容器 -->
+                <div class="timeline">
+                    <!-- 奖项 1 -->
+                    <!-- class="timeline-item" 用于样式 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <!-- 图标 -->
+                        <div class="timeline-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <!-- 内容卡片 -->
+                        <div class="timeline-content">
+                            <!-- 日期 -->
+                            <span class="timeline-date">2024.02</span>
+                            <!-- 标题，移除 data-translate 属性 -->
+                            <h3 class="timeline-title">第二届"星辰奖"全国大学生科幻征文大赛</h3>
+                            <!-- 文本描述，突出奖项等级，移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>全国特等奖</strong></p>
+                            <p class="timeline-text">科幻短篇小说《火烧云》获奖，由银河奖/星云奖得主阿缺老师指导，即将在香港集结出版。</p>
+                        </div>
+                    </div>
+
+                    <!-- 奖项 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023.11</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">重庆市科普作品创作大赛</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>三等奖</strong></p>
+                            <p class="timeline-text">科幻短篇小说《洋底深处》入选重庆市优秀科普作品集，由重庆科技出版社出版。</p>
+                        </div>
+                    </div>
+
+                    <!-- 奖项 3 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023.07</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">"中国科幻电影探索营-时光之鹫计划"</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>优秀学员</strong></p>
+                            <p class="timeline-text">短片作品《两只老虎》获入选国家数字电影产业园展映，负责编剧与剪辑工作。</p>
+                        </div>
+                    </div>
+                     <!-- 更多获奖项 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 时间轴 - 项目经历区域 -->
+        <!-- class="timeline-section section bg-light" 用于样式 -->
+        <section class="timeline-section section bg-light">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>项目经历</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我参与的重要项目</p>
+                </div>
+
+                <!-- 时间轴容器 -->
+                <div class="timeline">
+                    <!-- 项目 1 -->
+                    <!-- class="timeline-item" 用于样式 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <!-- 图标 -->
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <!-- 内容卡片 -->
+                        <div class="timeline-content">
+                            <!-- 日期 -->
+                            <span class="timeline-date">2023.09 - 2024.01</span>
+                            <!-- 标题，移除 data-translate 属性 -->
+                            <h3 class="timeline-title">《星际殖民》科幻游戏项目</h3>
+                             <!-- 文本描述，移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>游戏策划 & 剧情编写</strong></p>
+                            <p class="timeline-text">校内游戏开发团队项目，负责游戏世界观构建、角色设定与关卡设计，运用Unity引擎开发。</p>
+                        </div>
+                    </div>
+
+                    <!-- 项目 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023.05 - 2023.07</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">《两只老虎》科幻短片</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>编剧 & 剪辑</strong></p>
+                            <p class="timeline-text">参与"中国科幻电影探索营-时光之鹫计划"，负责短片剧本创作与后期剪辑工作，结合AI技术进行特效处理。</p>
+                        </div>
+                    </div>
+
+                    <!-- 项目 3 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022.10 - 2023.03</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">《2089》科幻小说集</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>作者</strong></p>
+                            <p class="timeline-text">个人创作的科幻短篇小说集，包含5篇短篇作品，探索未来科技对人类社会的影响。</p>
+                        </div>
+                    </div>
+                    <!-- 更多项目项 -->
+                </div>
+            </div>
+        </section>
+
+         <!-- 时间轴 - 在校经历区域 -->
+         <!-- class="timeline-section section" 用于样式 -->
+        <section class="timeline-section section">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>在校经历</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的校园生活片段</p>
+                </div>
+
+                <!-- 时间轴容器 -->
+                <div class="timeline">
+                    <!-- 经历 1 -->
+                    <!-- class="timeline-item" 用于样式 -->
+                    <!-- data-aos="fade-up" 添加滚动动画 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <!-- 图标 -->
+                        <div class="timeline-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <!-- 内容卡片 -->
+                        <div class="timeline-content">
+                            <!-- 日期 -->
+                            <span class="timeline-date">2023.09 - 至今</span>
+                            <!-- 标题，移除 data-translate 属性 -->
+                            <h3 class="timeline-title">校科幻协会</h3>
+                            <!-- 文本描述，移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>会长</strong></p>
+                            <p class="timeline-text">组织校内科幻创作交流活动，带领团队参与各类科幻文学竞赛，提升校园科幻文化氛围。</p>
+                        </div>
+                    </div>
+
+                    <!-- 经历 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022.10 - 2023.06</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">数字媒体实验室</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>实验室成员</strong></p>
+                            <p class="timeline-text">参与校内数字媒体项目研发，学习前沿技术应用，协助教师进行VR/AR相关实验。</p>
+                        </div>
+                    </div>
+
+                    <!-- 经历 3 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022.09 - 2023.01</span>
+                            <!-- 移除 data-translate 属性 -->
+                            <h3 class="timeline-title">校文学社</h3>
+                            <!-- 移除 data-translate 属性 -->
+                            <p class="timeline-text"><strong>科幻组组长</strong></p>
+                            <p class="timeline-text">负责组织科幻文学创作活动，定期举办作品分享会，培养校内科幻文学爱好者。</p>
+                        </div>
+                    </div>
+                     <!-- 更多在校经历项 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能爱好区域 -->
+        <!-- class="skills-section section bg-light" 用于样式 -->
+        <section class="skills-section section bg-light">
+            <div class="container">
+                <!-- 章节标题 -->
+                <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>技能爱好</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>我的专业能力</p>
+                </div>
+
+                <!-- 技能容器 -->
+                <div class="skills-container">
+                    <!-- 技能组 - AIGC工具 -->
+                    <!-- class="skill-group" 用于样式 -->
+                    <div class="skill-group" data-aos="fade-up">
+                        <!-- 技能组标题，移除 data-translate 属性 -->
+                        <h3><i class="fas fa-robot"></i> AIGC工具</h3>
+                        <!-- 技能列表 -->
+                        <div class="skill">
+                            <!-- 技能名称和百分比 -->
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Stable Diffusion</span>
+                                <span>95%</span>
+                            </div>
+                            <!-- 技能进度条背景 -->
+                            <div class="skill-bar">
+                                <!-- 技能进度条实际进度 -->
+                                <!-- data-level 属性用于JS动画 -->
+                                <div class="skill-level" data-level="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Claude & Deepseek</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>ComfyUI</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85%"></div>
+                            </div>
+                        </div>
+                         <!-- 更多AIGC工具技能 -->
+                    </div>
+
+                    <!-- 技能组 - 影视后期 -->
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                         <!-- 移除 data-translate 属性 -->
+                        <h3><i class="fas fa-film"></i> 影视后期</h3>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Adobe Premiere Pro</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Adobe After Effects</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Blender</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75%"></div>
+                            </div>
+                        </div>
+                         <!-- 更多影视后期技能 -->
+                    </div>
+
+                    <!-- 技能组 - 游戏开发 -->
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                         <!-- 移除 data-translate 属性 -->
+                        <h3><i class="fas fa-gamepad"></i> 游戏开发</h3>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>世界观构建</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>Unity</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>C#脚本编写</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="65%"></div>
+                            </div>
+                        </div>
+                         <!-- 更多游戏开发技能 -->
+                    </div>
+
+                    <!-- 技能组 - 创意写作 -->
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+                         <!-- 移除 data-translate 属性 -->
+                        <h3><i class="fas fa-pen-nib"></i> 创意写作</h3>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>科幻短篇创作</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>剧本创作</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">
+                                <!-- 移除 data-translate 属性 -->
+                                <span>游戏文案</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90%"></div>
+                            </div>
+                        </div>
+                         <!-- 更多创意写作技能 -->
+                    </div>
+                     <!-- 更多技能组 -->
+                </div>
+            </div>
+        </section>
+    </main>
+ <!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>

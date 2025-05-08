@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，移除 data-translate 属性 -->
+    <title>AIGC音乐作品 - 启末的博客</title>
+    <!-- 页面描述，移除 data-translate 属性 -->
+    <meta name="description" content="启末的AIGC音乐作品集。">
+
+    <!-- 引入 Font Awesome 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 animate.css 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 引入 AOS (Animate On Scroll) 库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- 引入 Google Fonts 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="style.css">
+     <!-- 页面特定的内联样式 (已移除，合并到style.css) -->
+     <!-- <style>...</style> -->
+</head>
+<body>
+    <!-- 加载动画 -->
+    <!-- class="preloader" 用于样式和JS控制 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+  <!-- 导航栏 -->
+    <!--#include virtual="topbar.html" -->
+    <main>
+        <!-- 页面标题区域 -->
+        <!-- class="page-header" 用于样式 -->
+        <!-- 页面头部背景图和叠加层样式已移至 style.css -->
+        <section class="page-header">
+            <div class="container">
+                <!-- 主标题，移除 data-translate 属性 -->
+                <h1>AIGC音乐作品</h1>
+                <!-- 副标题/描述，移除 data-translate 属性 -->
+                <p>AI辅助的音乐创作探索</p>
+            </div>
+        </section>
+
+        <!-- 作品列表区域 -->
+        <!-- class="portfolio-list section" 用于样式 -->
+        <section class="portfolio-list section">
+            <div class="container">
+                 <!-- 章节标题 -->
+                 <!-- data-aos="fade-up" 添加滚动动画 -->
+                 <div class="section-title" data-aos="fade-up">
+                    <!-- 移除 data-translate 属性 -->
+                    <h2>音乐作品集</h2>
+                    <!-- 移除 data-translate 属性 -->
+                    <p>聆听我的AIGC音乐创作</p>
+                </div>
+
+                <!-- 作品列表容器 -->
+                <!-- class="portfolio-items-container" 用于样式 -->
+                 <div class="portfolio-items-container">
+                     <!-- 作品项示例 1 - 未来都市主题曲 -->
+                     <!-- class="portfolio-item-detail" 用于样式 -->
+                     <!-- data-aos="fade-up" 添加滚动动画 -->
+                     <div class="portfolio-item-detail" data-aos="fade-up">
+                         <!-- 内容行，默认音频在左 -->
+                         <div class="row">
+                             <!-- 音频播放器区域 -->
+                             <!-- class="item-audio" 用于样式 -->
+                             <div class="item-audio">
+                                 <!-- HTML5 Audio 播放器 -->
+                                 <!-- 请替换 src 为您的实际音频文件路径（MP3或其他格式） -->
+                                 <audio controls>
+                                     <source src="/web_music/futuristic-theme.mp3" type="audio/mpeg">
+                                     <!-- 移除 data-translate 属性 -->
+                                     您的浏览器不支持音频元素。
+                                 </audio>
+                             </div>
+                             <!-- 作品文本内容区域 -->
+                             <!-- class="item-content" 用于样式 -->
+                             <div class="item-content">
+                                 <!-- 标题，移除 data-translate 属性 -->
+                                 <h3>未来都市主题曲</h3>
+                                 <!-- 元信息（工具、年份等），移除 data-translate 属性 -->
+                                 <p class="meta"><strong>工具</strong>: AI Music Gen | <strong>年份</strong>: 2024</p>
+                                 <!-- 描述，移除 data-translate 属性 -->
+                                 <p class="description">这首音乐是为我的一个未来都市概念项目创作的主题曲，探索了AI在环境音乐生成中的应用...</p>
+                                 <!-- 行动按钮（可选，如果需要提供下载或跳转），移除 data-translate 属性 -->
+                                 <!-- <a href="#" class="btn btn-primary">下载音频</a> -->
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- 作品项示例 2 - 游戏背景音乐 -->
+                     <!-- class="portfolio-item-detail" 用于样式 -->
+                     <!-- data-aos="fade-up" data-aos-delay="100" 添加滚动动画，延迟100ms -->
+                     <div class="portfolio-item-detail" data-aos="fade-up" data-aos-delay="100">
+                          <!-- 内容行，添加 'reverse' 类使音频在右 -->
+                          <div class="row reverse">
+                              <!-- 音频播放器区域 -->
+                              <div class="item-audio">
+                                  <!-- HTML5 Audio 播放器 -->
+                                  <!-- 请替换 src -->
+                                  <audio controls>
+                                      <source src="/web_music/game-bgm.mp3" type="audio/mpeg">
+                                      <!-- 移除 data-translate 属性 -->
+                                      您的浏览器不支持音频元素。
+                                  </audio>
+                              </div>
+                              <!-- 作品文本内容区域 -->
+                              <div class="item-content">
+                                  <!-- 标题，移除 data-translate 属性 -->
+                                  <h3>科幻游戏背景音乐片段</h3>
+                                  <!-- 元信息，移除 data-translate 属性 -->
+                                  <p class="meta"><strong>工具</strong>: Amper Music | <strong>年份</strong>: 2023</p>
+                                  <!-- 描述，移除 data-translate 属性 -->
+                                  <p class="description">为校内游戏项目创作的背景音乐片段，尝试使用AI工具快速生成符合游戏氛围的音乐...</p>
+                                  <!-- 行动按钮（可选），移除 data-translate 属性 -->
+                                  <!-- <a href="#" class="btn btn-primary">了解更多</a> -->
+                              </div>
+                          </div>
+                      </div>
+
+                     <!-- 您可以按照上述结构添加更多AIGC音乐作品项 -->
+                     <!-- 确保替换音频文件路径、alt文本、链接以及data-aos属性 -->
+                 </div>
+            </div>
+        </section>
+    </main>
+<!-- 页脚 -->
+    <!--#include virtual="footer.html" -->
+    <!-- JavaScript库 -->
+    <!-- 引入jQuery库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 引入Waypoints库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- 引入AOS库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- 引入自定义JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
